@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
     home: Scaffold(
       backgroundColor: Color.fromARGB(255, 107, 96, 86),
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Maching game',
           style: TextStyle(
             fontSize: 30,
@@ -16,9 +16,22 @@ import 'package:flutter/material.dart';
         ),
       backgroundColor: Color.fromARGB(255, 255, 167, 15),
       ),
+      body: ImagePage(),
     ),
   ),
   );
-
   }
- 
+
+class ImagePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+
+      children: [
+        Text('The first game')
+
+      ],
+    );
+  }
+}
