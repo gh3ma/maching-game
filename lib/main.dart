@@ -29,7 +29,13 @@ class ImagePage extends StatelessWidget {
     return const Column(
 
       children: [
-        Text('The first game')
+        Text(
+          'The first game',
+          style: 
+          TextStyle(
+            fontSize: 24,
+          ),
+          ),
 
       ],
     );
